@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homa Clikers V1.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Homa Clikers V1.0</h1>
+        <p>Тыкай на Homa чтобы получать HomaCoin</p>
+
+        <div id="game-area">
+            <div id="click-area">
+                <img id="click-image" src="2024-08-08_19-14-39.png" alt="Целевая картинка">
+                <p>HomaCoin: <span id="score">0</span></p>
+            </div>
+
+            <div id="upgrade-levels">
+                <h2>Homa Bust</h2>
+                <p>Clasic Home: <span id="upgrade1-level">0</span>/50 LvL</p>
+                <p>Super Homa: <span id="upgrade2-level">0</span>/20 LvL</p>
+            </div>
+        </div>
+
+        <div id="reward-message"></div>
+
+        <div id="rewards">
+            <!-- Сюда будут добавляться награды -->
+        </div>
+
+        <h2>Homa Shop</h2>
+        <div id="shop">
+            <div class="shop-item" data-cost="500" data-value="1" data-upgrade="1" data-max-level="50">
+                <p>Clasic Homa (500 HC) - +1 HomaCoin за клик</p>
+                <button class="buy-button">Купить</button>
+            </div>
+            <div class="shop-item" data-cost="2500" data-value="2" data-upgrade="2" data-max-level="20">
+                <p>Super Homa (2500 HC) - +3 HomaCoin за клик</p>
+                <button class="buy-button">Купить</button>
+            </div>
+        </div>
+
+        <button id="reset-button">Рестарт Homa Clikers</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

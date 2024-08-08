@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg'); /* Устанавливаем фон */
+    background-size: cover; /* Устанавливаем размер фона */
+    background-position: center; /* Центрируем фон */
+    background-attachment: fixed; /* Закрепляем фон, чтобы он не прокручивался */
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для контейнера */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#game-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#click-area {
+    margin-right: 50px;
+}
+
+#click-image {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+#click-image:active {
+    transform: scale(0.9);
+}
+
+#rewards {
+    margin-top: 20px;
+}
+
+.reward-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.reward-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#shop {
+    margin-top: 30px;
+}
+
+.shop-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+.shop-item p {
+    margin: 0;
+}
+
+.buy-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#upgrade-levels {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#upgrade-levels h2 {
+    margin-top: 0;
+}
+
+#upgrade-levels p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#reset-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
